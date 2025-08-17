@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="animation" href="animation.css" />
 </head>
 
 <body>
@@ -48,31 +49,63 @@
       developer, and contribute to impactful work in the tech community.
     </p>
     <ul class="about-info">
-      <li><strong>Age:</strong> 19</li>
-      <li><strong>Interests:</strong> Web Development, AI, Machine Learning</li>
-      <li><strong>Email:</strong> belishmashah@gmail.com</li>
+      <li><strong>Age : 19</strong></li>
+      <li><strong>Interests : Web Development, AI, Machine Learning</strong></li>
+      <li><strong>Email : belishmashah@gmail.com</strong></li>
     </ul>
 
   </section>
 
   <section id="techstack" class="section">
     <h2>Skills</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>Java</li>
-      <li>Python</li>
-      <li>C/C++</li>
-      <li>VS Code</li>
-      <li>Git</li>
-      <li>Canva</li>
-    </ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills List</title>
+  <style>
+    ul {
+      list-style: none; /* remove bullets */
+      padding: 0;
+    }
+    li {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+      font-size: 18px;
+      font-family: Arial, sans-serif;
+    }
+    li img {
+      width: 100px;   /* set uniform width */
+      height: 100px;  /* set uniform height */
+      margin-left: 10px; /* space between text and image */
+    }
+    li img:hover {
+      transform: scale(1.1); /* zoom effect on hover */
+      transition: transform 0.3s ease; /* smooth transition */
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><strong>HTML</strong> <img src="html.png" alt="html"></li>
+    <li><strong>CSS</strong> <img src="css.png" alt="css"></li>
+    <li><strong>JavaScript</strong> <img src="js.png" alt="javascript"></li>
+    <li><strong>Java</strong> <img src="java.png" alt="java"></li>
+    <li><strong>Python</strong> <img src="python.png" alt="python"></li>
+    <li><strong>C/C++</strong> <img src="c.png" alt="cpp"></li>
+    <li><strong>VS Code</strong> <img src="vscode.png" alt="vscode"></li>
+    <li><strong>Git</strong> <img src="github.png" alt="git"></li>
+    <li><strong>Canva</strong> <img src="canva.png" alt="canva"></li>
+  </ul>
+</body>
+</html>
   </section>
 
   <section id="education" class="section">
     <h2>Education</h2>
-
+    <div class="left-section">
     <div class="education-entry">
       <h3>Dwarkadas J. Sanghvi College of Engineering</h3>
       <p>B.Tech in Electronics and Telecommunication - CGPA: 7.65</p>
@@ -90,22 +123,21 @@
       <p>10th Grade - Percentage: 93.80%</p>
       <p><strong>Graduation Year :</strong> 2022</p>
     </div>
+    </div>
   </section>
 
   <section id="projects" class="section">
     <h2>Projects</h2>
-    <ul>
-      <li>
+    <div>
         <strong>Portfolio Website:</strong><br>
         A fully responsive personal website built using HTML, CSS, and JavaScript to showcase my skills, projects, and
         contact details. It features smooth navigation, a dark theme, and animated interactions.
-      </li>
-      <li>
+    </div>
+    <div> 
         <strong>Clock & Task Manager App:</strong><br>
         A web app that displays real-time date and time along with a simple task manager where users can add, delete,
         and mark tasks as done. Built using JavaScript and styled with CSS grid and flexbox.
-      </li>
-    </ul>
+    </div>
   </section>
 
 
@@ -124,6 +156,18 @@
   </footer>
 
   <script src="script.js"></script>
+
+  <div class="circles">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+
 </body>
 
 </html>
